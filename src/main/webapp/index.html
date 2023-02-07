@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>WebSocket</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="main.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1>Player-Screen</h1>
+    <button type="submit" onclick="connect()" style="color: green" id="connect">verbinden</button>
+    <button type="submit" onclick="disconnect()" style="color: grey" id="disconnect" disabled>trennen</button>
+    <span id="status"></span>
+    <hr/>
+    <input type="text" placeholder="Nachricht eingeben" id="msg">
+    <button type="submit" onclick="sendMessage()">senden</button>
+    <br/>
+    <textarea cols="50" rows="10" disabled id="out"></textarea>
+</body>
+
+</html>
